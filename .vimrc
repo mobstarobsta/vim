@@ -181,6 +181,16 @@ nnoremap <silent> L W
 nnoremap <silent> L W
 omap <silent> L W
 
+noremap <silent> <C-<Space>> <Esc>
+
+vnoremap iH <Esc>:silent! normal! wbvt_<CR>
+"omap iH :normal viH<CR>
+omap iH :silent! normal! wbvt_<CR>
+
+vnoremap iL <Esc>:silent! normal! hevT_<CR>
+"omap iL :normal viL<CR>
+omap iL :silent! normal! hevT_<CR>
+
 " ctrl modifier for nav keys moves up/dwn to ends of the file, left/right
 " between ends of the line
 nnoremap <silent> <C-H> ^
